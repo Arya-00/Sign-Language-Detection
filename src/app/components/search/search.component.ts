@@ -69,7 +69,7 @@ export class SearchComponent {
 				formData.append("image", this.uploadedFile);
 			}
 
-			this.http.post("http://localhost:5000/chats", formData)
+			this.http.post("https://sign-language-detection-backend.onrender.com/chats", formData)
 				.subscribe({
 					next: (res: any) => {
 						console.log(res.Response);
