@@ -1,0 +1,48 @@
+<header>
+    <button mat-fab aria-label="Example icon button with a delete icon" [routerLink]="['/']" routerLinkActive="router-link-active">
+        <mat-icon>arrow_backward_ios</mat-icon>
+    </button>
+    <button mat-fab extended (click)="onSubmit()">
+        <mat-icon>upload</mat-icon>
+        Send
+    </button>
+    <input id="file-upload" type="file" (change)="onImageUpload($event)" accept="image/*" />
+</header>
+<div class="prompt">
+    <mat-form-field>
+        <mat-label>Prompt here</mat-label>
+        <input matInput [formControl]="prompt">
+    </mat-form-field>
+</div>
+<body>
+    <div class="image-preview">
+        @if(imageSrc)
+        {
+            <img [src]="imageSrc" alt="Uploaded Image" />
+        }
+        @else
+        {
+            <label for="file-upload" matRipple>
+                <img src="/icon2.webp" alt="upload icon">
+            </label>
+        }
+    </div>
+    <hr>
+    <div class="response">
+        <h1>Response</h1>
+        @if(responseData !== '')
+        {
+            <div #responseDiv class="response1" [innerHTML]="responseData"></div>
+        }
+        @else if(isClicked)
+        {
+            <video autoplay loop muted>
+                <source src="/Animation - 3.webm" type="video/webm">
+            </video>
+        }
+        @else
+        {
+            <img src="/respo.jpg" alt="response here" title="Response">
+        }
+    </div>
+</body>

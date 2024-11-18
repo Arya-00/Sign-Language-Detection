@@ -1,0 +1,35 @@
+/* Color Theme Swatches in Hex */
+$color-1: #011640;
+$color-2: #011126;
+$color-3: #00060d;
+$color-4: #2e57bc;
+$color-5: #a7bdd9;
+
+:host
+{
+    width: 100%;
+    height: 100%;
+    background-color: #4E4BA6;
+}
+main
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background: url('/wallpaper-5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chat
+{
+    height: 100%;
+    background-color: $color-3;
+}
+.main
+{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px 20px 0px 20px;
+}
