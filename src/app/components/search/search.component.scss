@@ -110,6 +110,7 @@ mat-form-field {
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 30% 1fr;
+    place-content: center;
     gap: 10px;
     background-color: #ffffff3d !important;
     backdrop-filter: blur(4px);
