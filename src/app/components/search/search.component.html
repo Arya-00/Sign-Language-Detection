@@ -18,7 +18,9 @@
     <div class="image-preview">
         @if(imageSrc)
         {
-            <img [src]="imageSrc" alt="Uploaded Image" (click)="onImageUpload($event)" />
+            <label for="file-upload" matRipple>
+                <img [src]="imageSrc" alt="Uploaded Image">
+            </label>
         }
         @else
         {
