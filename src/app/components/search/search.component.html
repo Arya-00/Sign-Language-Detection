@@ -2,7 +2,7 @@
     <button mat-fab aria-label="Example icon button with a delete icon" [routerLink]="['/']" routerLinkActive="router-link-active">
         <mat-icon>arrow_backward_ios</mat-icon>
     </button>
-    <button mat-fab extended (click)="onSubmit()">
+    <button mat-fab extended (click)="onSubmit()" [disabled]="buttonDisabled">
         <mat-icon>upload</mat-icon>
         Send
     </button>
