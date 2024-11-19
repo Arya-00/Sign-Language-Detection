@@ -26,6 +26,7 @@ export class SearchComponent {
 
 	imageSrc: string | ArrayBuffer | null = null;
 	isClicked: boolean = false;
+	buttonDisabled: boolean = false;
 
 	prompt = new FormControl(
 		{ value: 'What Sign Language Symbol is this?', disabled: true },
@@ -68,13 +69,14 @@ export class SearchComponent {
 			if (this.uploadedFile) {
 				formData.append("image", this.uploadedFile);
 			}
-
+			this.buttonDisabled = true;
 			this.http.post("https://sign-language-detection-backend.onrender.com/chats", formData)
 				.subscribe({
 					next: (res: any) => {
 						console.log(res.Response);
 						this.responseData = res.Response;
 						this.openSnackBar("Response Generated", "OK");
+						this.buttonDisabled = false;
 					},
 					error: (error: HttpErrorResponse) => {
 						this.openSnackBar('Server Error: ', 'OK');
