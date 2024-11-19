@@ -109,7 +109,7 @@ mat-form-field {
     min-height: 43vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-rows: 30% 1fr;
     gap: 10px;
     background-color: #ffffff3d !important;
     backdrop-filter: blur(4px);
