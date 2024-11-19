@@ -15,7 +15,7 @@
     </mat-form-field>
 </div>
 <body>
-    <div class="image-preview">
+    <div class="image-preview" [ngClass]="{ 'disabled': buttonDisabled }">
         @if(imageSrc)
         {
             <label for="file-upload" matRipple>
