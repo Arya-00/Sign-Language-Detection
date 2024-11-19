@@ -108,10 +108,9 @@ mat-form-field {
     width: 100%;
     min-height: 43vh;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 10px;
     background-color: #ffffff3d !important;
     backdrop-filter: blur(4px);
     border-radius: 24px;
@@ -135,7 +134,7 @@ mat-form-field {
 .response1
 {
     width: 100%;
-    height: 100%;;
+    height: 100%;
     overflow-y: scroll;
     display: flex;
     justify-content: center;
