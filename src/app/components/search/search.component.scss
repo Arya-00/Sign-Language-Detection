@@ -26,6 +26,12 @@ hr
     margin: 10px 0px;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .image-preview {
     width: 100%;
     display: flex;
@@ -94,7 +100,6 @@ mat-form-field {
 ::ng-deep .mat-mdc-text-field-wrapper {
     width: 100%;
     border-radius: 24px !important;
-    // background-color: #ffffff17 !important;
     background-color: #ffffff3d !important;
     backdrop-filter: blur(4px);
 }
@@ -106,7 +111,6 @@ mat-form-field {
 .response
 {
     width: 100%;
-    min-height: 43vh;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 30% 1fr;
@@ -118,12 +122,15 @@ mat-form-field {
     padding: 10px;
     color: white;
     font-family: "Open Sans", sans-serif;
+    flex: 1;
 }
 .response h1
 {
     text-align: center;
-    color: white;
+    color: #cbc9fe;
     font-weight: 800;
+    margin: 0;
+    align-self: center;
 }
 
 .response img
@@ -140,13 +147,21 @@ mat-form-field {
 .response1
 {
     width: 100%;
-    font-size: 1rem;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2rem);
     line-height: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+}
+.response1 p
+{
+    margin: 0;
 }
 
 .disabled {
