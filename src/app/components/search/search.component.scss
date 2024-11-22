@@ -4,6 +4,7 @@ $color-3: #00060d;
 :host {
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
