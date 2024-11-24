@@ -4,12 +4,24 @@ $color-3: #00060d;
 :host {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+om-gridpattern
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
     box-sizing: border-box;
     padding: 20px;
+}
+::ng-deep .om-gridpattern
+{
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    background: url('/waves-2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +56,7 @@ body
 .image-preview img {
     height: 200px;
     border-radius: 24px;
-    background-color: #34343462;
+    // background-color: #34343462;
     backdrop-filter: blur(4px);
 }
 
@@ -55,6 +67,7 @@ label {
     cursor: pointer;
     text-align: center;
     display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 input[type="file"] {
@@ -121,7 +134,8 @@ mat-form-field {
     border-radius: 24px;
     padding: 10px;
     color: white;
-    font-family: "Open Sans", sans-serif;
+    // font-family: "Open Sans", sans-serif;
+    font-family: geist;
     flex: 1;
 }
 .response h1
@@ -158,7 +172,8 @@ mat-form-field {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
+    // font-family: "Open Sans", sans-serif;
+    font-family: geist;
     text-align: center;
 }
 .response1 p

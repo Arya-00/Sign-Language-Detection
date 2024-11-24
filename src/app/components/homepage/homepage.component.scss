@@ -2,12 +2,26 @@
 {
     width: 100%;
     height: 100%;
-    background: url('/waves-1.svg');
+    // background: url('/Backgrounds/waves-1.svg');
+    background-color: black;
     background-position: center;
     background-size: cover;
+    color: white;
+    display: flex;
+}
+om-aurora
+{
+    width: 100%;
+    height: 100%;
+}
+::ng-deep .om-aurora
+{
+    width: 100%;
+    height: 100% !important;
     display: grid;
     grid-template-rows: 1fr 200px;
-    color: white;
+    place-items: center;
+    color: rgb(227, 227, 227);
 }
 main
 {
@@ -40,5 +54,6 @@ p
 }
 button
 {
+    display: flex;
     justify-self: center;
 }

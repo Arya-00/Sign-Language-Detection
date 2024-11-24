@@ -9,11 +9,12 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { NgxGridpatternComponent } from '@omnedia/ngx-gridpattern';
 
 @Component({
 	selector: 'app-search',
 	standalone: true,
-	imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatRippleModule, MatIconModule, RouterLink],
+	imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatRippleModule, MatIconModule, RouterLink, NgxGridpatternComponent],
 	templateUrl: './search.component.html',
 	styleUrl: './search.component.scss'
 })
