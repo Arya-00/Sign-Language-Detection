@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 export const routes: Routes = [
     {
@@ -10,5 +11,9 @@ export const routes: Routes = [
     {
         path: 'search',
         component: SearchComponent
+    },
+    {
+        path: 'chats',
+        component: ChatComponent
     }
 ];
