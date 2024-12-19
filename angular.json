@@ -29,6 +29,11 @@
 							{
 								"glob": "**/*",
 								"input": "public"
+							},
+							{
+								"glob": "manifest.json",
+								"input": ".",
+								"output": "."
 							}
 						],
 						"styles": [
@@ -89,6 +94,11 @@
 							{
 								"glob": "**/*",
 								"input": "public"
+							},
+							{
+								"glob": "manifest.json",
+								"input": ".",
+								"output": "."
 							}
 						],
 						"styles": [
