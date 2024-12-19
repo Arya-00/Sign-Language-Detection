@@ -3,7 +3,7 @@
     "short_name": "Sign Language Detection",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#232323",
+    "background_color": "#000000",
     "icons": [
         {
             "src": "Icons/manifest-icon-192.maskable.png",
@@ -33,13 +33,13 @@
     "screenshots": [
         {
             "src": "Screenshots/Laptop-Screenshot.png",
-            "sizes": "1440x900",
+            "sizes": "1920x1080",
             "type": "image/png",
             "form_factor": "wide"
         },
         {
             "src": "Screenshots/Mobile-Screenshot.png",
-            "sizes": "375x667",
+            "sizes": "386x856",
             "type": "image/png"
         }
     ]
